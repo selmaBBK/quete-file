@@ -46,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
     <p>FirstBame: <?php if(isset($_POST['user_firstname'])) echo $_POST['user_firstname'] ?></p>
     <p>Lastname : <?php if(isset($_POST['user_name'])) echo $_POST['user_name'] ?></p>
     <p>Age: <?php if(isset($_POST['user_age'])) echo $_POST['user_age'] ?></p>
-    <img src="<?php if(isset($uploadFile)){ echo $uploadFile;}  ?>">
+    <img src="<?php if(isset($uploadFile)){ echo $uploadFile;} ?>">
 </form>
 
 
